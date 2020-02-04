@@ -53,3 +53,6 @@ function isBalanced(treeRoot) {
                 nodes.push([node.right, depth + 1])
             }
         }
+    }
+    return true;
+}
