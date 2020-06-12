@@ -2,8 +2,8 @@
 
 // Why an array of characters instead of a string?
 
-// The goal of this question is to practice manipulating strings 
-// in place. Since we're modifying the input, we need a mutable ↴ 
+// The goal of this question is to practice manipulating strings
+// in place. Since we're modifying the input, we need a mutable ↴
 // type like an array, instead of JavaScript's immutable strings.
 
 
@@ -15,7 +15,7 @@ function reverse(arrayOfChars) {
   while (frontCounter < backCounter){
     const firstChar = arrayOfChars[frontCounter];
     const secondChar = arrayOfChars[backCounter];
-    
+
     arrayOfChars[frontCounter] = secondChar;
     arrayOfChars[backCounter] = firstChar;
     frontCounter ++;

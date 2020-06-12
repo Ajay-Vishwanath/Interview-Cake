@@ -2,7 +2,7 @@
 
 // Each order is represented by an "order id"(an integer).
 
-// We have our lists of orders sorted numerically already, in arrays.Write a function to merge our arrays of orders into one sorted array.
+// We have our lists of orders sorted numerically already, in arrays. Write a function to merge our arrays of orders into one sorted array.
 
 // For example:
 
@@ -16,7 +16,7 @@ function mergeArrays(myArray, alicesArray) {
 
   // Combine the sorted arrays into one large sorted array
   let mergedArray=[];
-  
+
   while (myArray.length > 0 && alicesArray.length > 0){
     let myEle = myArray[0];
     let alicesEle = alicesArray[0];
@@ -26,7 +26,7 @@ function mergeArrays(myArray, alicesArray) {
       mergedArray.push(alicesArray.shift());
     }
   }
-  
+
   mergedArray = mergedArray.concat(myArray);
   mergedArray = mergedArray.concat(alicesArray);
 
